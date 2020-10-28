@@ -3,7 +3,7 @@
 PHP_VER ?= 7.4.11
 PHP_VER_MINOR ?= $(shell echo "${PHP_VER}" | grep -oE '^[0-9]+\.[0-9]+')
 
-REPO = wodby/php
+REPO = marcinmaruszewski/php
 NAME = php-$(PHP_VER_MINOR)
 
 WODBY_USER_ID ?= 1000
