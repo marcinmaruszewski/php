@@ -285,7 +285,7 @@ RUN set -xe; \
     wget -qO- "${xhprof_url}" | tar xz --strip-components=1 -C /usr/src/php/ext/tideways_xhprof; \
     docker-php-ext-install tideways_xhprof; \
     \
-    wget -qO- https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer; \
+    wget -qO- https://getcomposer.org/installer | php -- --1 --install-dir=/usr/local/bin --filename=composer; \
     \
     # Install Walter (deprecated).
     walter_ver="1.4.0"; \
